@@ -5,7 +5,6 @@ It sorts the json data in mixed data types according to data priority.
 Before you begin you must have .Net Standard 2.1 installed and configured properly for your computer. Please see [Download .NET SDKs](https://dotnet.microsoft.com/en-us/download/visual-studio-sdks)
 
 # Run Json Properties Sorter
-You can use Console Application under Release folder to run Json Properties Sorter.
 
 ```c#
 Paste your json content below and end with an empty line:
