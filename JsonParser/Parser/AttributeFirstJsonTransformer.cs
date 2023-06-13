@@ -61,7 +61,7 @@ namespace JsonParser.Parser
 
         private static List<JProperty> GetOrderedJsonChilderen(List<JProperty> properties)
         {
-            properties = properties.OrderBy(x => GetOrderedChild(x.Value)).ToList();
+            properties = properties.OrderBy(x => GetPriority(x.Value)).ToList();
 
             for (var i = 0; i <= properties.Count - 1; i++)
             {
@@ -97,7 +97,7 @@ namespace JsonParser.Parser
             return properties;
         }
 
-        private static int GetOrderedChild(JToken val)
+        private static int GetPriority(JToken val)
         {
             int toReturn;
             switch (val.Type)
